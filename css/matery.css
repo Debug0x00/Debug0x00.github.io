@@ -564,7 +564,7 @@ header .go-back i {
     display: block;
     left: 0;
     top: 0;
-    content: "";
+    /* content: ""; */
 }
 
 .bg-cover .container {
@@ -2101,12 +2101,12 @@ p.search-result-summary{
 }
 /* 滚动条 */
 ::-webkit-scrollbar-thumb {
-    background-color: #FF2A68;
+    background-color:	#F0F8FF;
     background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
     border-radius: 3em;
 }
 ::-webkit-scrollbar-track {
-    background-color: #ffcacaff;
+    background-color: #87CEEB;
     border-radius: 3em;
 }
 ::-webkit-scrollbar {
