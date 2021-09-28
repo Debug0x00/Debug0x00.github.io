@@ -759,6 +759,7 @@ header .go-back i {
 
 .recommend .post-card .post-categories {
     margin: 10px auto;
+    visibility: hidden;
 }
 
 .recommend .post-card .post-categories .category {
