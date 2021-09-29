@@ -6,7 +6,7 @@
   <link href="http://www.netsecit.com/atom.xml" rel="self"/>
   
   <link href="http://www.netsecit.com/"/>
-  <updated>2021-09-29T05:16:31.989Z</updated>
+  <updated>2021-09-29T06:37:02.558Z</updated>
   <id>http://www.netsecit.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo 博客本地部署教程</title>
+    <title>Hexo-Matery主题美化</title>
+    <link href="http://www.netsecit.com/posts/8d3f.html"/>
+    <id>http://www.netsecit.com/posts/8d3f.html</id>
+    <published>2021-09-29T05:23:58.000Z</published>
+    <updated>2021-09-29T06:37:02.558Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;初始化各页面&quot;&gt;&lt;a href=&quot;#初始化各页面&quot; class=&quot;headerlink&quot; title=&quot;初始化各页面&quot;&gt;&lt;/a&gt;初始化各页面&lt;/h3&gt;&lt;p&gt;新建分类 categories 页&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;categories&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="博客" scheme="http://www.netsecit.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="hexo" scheme="http://www.netsecit.com/tags/hexo/"/>
+    
+    <category term="matery" scheme="http://www.netsecit.com/tags/matery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 博客本地部署教程</title>
     <link href="http://www.netsecit.com/posts/536e.html"/>
     <id>http://www.netsecit.com/posts/536e.html</id>
     <published>2021-09-29T03:48:23.000Z</published>
-    <updated>2021-09-29T05:16:31.989Z</updated>
+    <updated>2021-09-29T05:29:08.320Z</updated>
     
     
       
@@ -40,59 +68,6 @@
     <category term="hexo" scheme="http://www.netsecit.com/tags/hexo/"/>
     
     <category term="matery" scheme="http://www.netsecit.com/tags/matery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软路由</title>
-    <link href="http://www.netsecit.com/posts/69d1.html"/>
-    <id>http://www.netsecit.com/posts/69d1.html</id>
-    <published>2021-09-19T03:03:21.000Z</published>
-    <updated>2021-09-27T04:48:48.212Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;---
-title: 软路由
-date: 2018-09-30 17:25:30
-type: &quot;contact&quot;
-软路由
----&lt;span</summary>
-        
-      
-    
-    
-    
-    <category term="bugrenew" scheme="http://www.netsecit.com/categories/bugrenew/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://www.netsecit.com/posts/3eeb.html"/>
-    <id>http://www.netsecit.com/posts/3eeb.html</id>
-    <published>2021-09-19T02:42:16.800Z</published>
-    <updated>2021-09-29T02:51:16.306Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="bugrenew" scheme="http://www.netsecit.com/categories/bugrenew/"/>
-    
-    
-    <category term="abc" scheme="http://www.netsecit.com/tags/abc/"/>
     
   </entry>
   

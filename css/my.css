@@ -1,9 +1,9 @@
 /* Here is your custom css styles. */
 @font-face{
-    font-family: 'myFont';
-    src: url('../font/myFont.ttf');
+    font-family: 'STZHONGS.TTF';
+    src: url('../font/STZHONGS.TTF');
 }
 
 body{
-    font-family: 'myFont';
+    font-family: 'STZHONGS.TTF';
 }
