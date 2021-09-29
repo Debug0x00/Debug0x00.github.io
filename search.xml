@@ -4,184 +4,27 @@
   
     
     <entry>
-      <title>index</title>
-      <link href="/posts/4c2a.html"/>
-      <url>/posts/4c2a.html</url>
+      <title>hexo 博客本地部署教程</title>
+      <link href="/posts/536e.html"/>
+      <url>/posts/536e.html</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>第一篇渗透测试</title>
-      <link href="/posts/98b9.html"/>
-      <url>/posts/98b9.html</url>
-      
-        <content type="html"><![CDATA[<p>asdas</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="0x01-安装node-js"><a href="#0x01-安装node-js" class="headerlink" title="0x01 安装node.js"></a>0x01 安装node.js</h3><h5 id="Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具"><a href="#Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具" class="headerlink" title="Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具"></a>Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具</h5><p>windows安装:<a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p><p>linux安装</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">sudo apt-get install nodejssudo apt-get install npm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>安装完后，打开命令行</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">node -vnpm -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="0x02-安装git"><a href="#0x02-安装git" class="headerlink" title="0x02 安装git"></a>0x02 安装git</h3><p>windows安装:<a href="https://gitforwindows.org/">https://gitforwindows.org/</a></p><p>linux安装</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">sudo apt-get install git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装好后，用<code>git --version</code> 来查看一下版本</p><h3 id="0x03-安装hexo"><a href="#0x03-安装hexo" class="headerlink" title="0x03 安装hexo"></a>0x03 安装hexo</h3><p>首先命令行进入需要创建blog的路径，并安装hexo-cli程序</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装好后使用<code>hexo -v</code>查看一下版本</p><p>初始化hexo </p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo init myblog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>myblog可自行更改名称</p><p>新建完成后，指定文件夹目录下有：</p><p><code>node_modules:依赖包</code></p><p><code>public:存放生成的页面</code> </p><p><code>scaffolds:生成文章的一些模板</code></p><p><code>sourc:用来存放你的文章</code></p><p><code>themes:主题</code> </p><p><code>_config.yml:博客的配置文件</code></p><p>Hexo常用命令</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new post/draft "postName"  #新建发布/草稿文章hexo new page "pageName" # 新建页面hexo generate # 生成静态页面至public目录hexo server # 启动服务器(默认端口4000，'ctrl+c'关闭server)hexo deploy # 远程部署项目hexo help # 查看帮助hexo version # 查看Hexo的版本hexo clean # 清除Hexo的缓存<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>启用后在浏览器输入127.0.0.1:4000即可看到博客</p><p><img src="../images/bk.jpg" alt="hexo"></p><h3 id="0x04-安装hexo-matery主题"><a href="#0x04-安装hexo-matery主题" class="headerlink" title="0x04 安装hexo-matery主题"></a>0x04 安装hexo-matery主题</h3><p>终端进入博客目录，找到themes文件夹，该文件夹是主题包文件夹，下载hexo-theme-matery主题</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">git clone git@github.com:blinkfox/hexo-theme-matery.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装好后进入根目录下的全局配置文件_config.yml<code>ctrl+f</code>搜索<code>theme: </code>,修改为hexo-theme-matery</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">theme: hexo-theme-matery<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><code>tips: hexo目录下有两个yml配置文件，一个是全局配置，一个是themes目录下的主题配置</code></p><p>_config.yml 文件的其它修改建议:</p><p><code>请修改 _config.yml 的 url 的值为你的网站主 URL（如：http://xxx.github.io）。</code><br><code>建议修改两个 per_page 的分页条数值为 6 的倍数，如：12、18 等，这样文章列表在各个屏幕下都能较好的显示。</code><br><code>如果是中文用户，则建议修改 language 的值为 zh-CN。</code></p><p>以上是hexo本地化部署的初步设定，下篇介绍matery主题的美化设置</p>]]></content>
       
       
       <categories>
           
-          <category> 网络安全 </category>
+          <category> 博客 </category>
           
       </categories>
       
       
-    </entry>
-    
-    
-    
-    <entry>
-      <title>bugrenew</title>
-      <link href="/posts/4d87.html"/>
-      <url>/posts/4d87.html</url>
-      
-        <content type="html"><![CDATA[<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">feed<span class="token operator">:</span>  type<span class="token operator">:</span> atom  path<span class="token operator">:</span> atom<span class="token punctuation">.</span>xml  limit<span class="token operator">:</span> <span class="token number">20</span>  hub<span class="token operator">:</span>  content<span class="token operator">:</span>  content_limit<span class="token operator">:</span> <span class="token number">140</span>  content_limit_delim<span class="token operator">:</span> <span class="token string">' '</span>  order_by<span class="token operator">:</span> <span class="token operator">-</span>date<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> bugrenew </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>linux</title>
-      <link href="/posts/faca.html"/>
-      <url>/posts/faca.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> linux </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>macos</title>
-      <link href="/posts/3e2e.html"/>
-      <url>/posts/3e2e.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> macos </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>cloud</title>
-      <link href="/posts/3ece.html"/>
-      <url>/posts/3ece.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> cloud </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>wireshark</title>
-      <link href="/posts/78f3.html"/>
-      <url>/posts/78f3.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> wireshark </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>web安全</title>
-      <link href="/posts/4b61.html"/>
-      <url>/posts/4b61.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="测试页"><a href="#测试页" class="headerlink" title="测试页"></a>测试页</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> 软路由搭建 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/posts/765b.html"/>
-      <url>/posts/765b.html</url>
-      
-        <content type="html"><![CDATA[<p>这是一个网络页面</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 分类 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>test</title>
-      <link href="/posts/undefined.html"/>
-      <url>/posts/undefined.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 东软 </category>
-          
-      </categories>
-      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> matery </tag>
+            
+        </tags>
       
     </entry>
     
@@ -211,7 +54,7 @@
       <link href="/posts/3eeb.html"/>
       <url>/posts/3eeb.html</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-welcome-to-my-school"><a href="#Create-welcome-to-my-school" class="headerlink" title="Create welcome to my school"></a>Create welcome to my school</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new "My New Post"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server-Run-server"><a href="#Run-server-Run-server" class="headerlink" title="Run server Run server"></a>Run server Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get </p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-welcome-to-my-school"><a href="#Create-welcome-to-my-school" class="headerlink" title="Create welcome to my school"></a>Create welcome to my school</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new "My New Post"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server-Run-server"><a href="#Run-server-Run-server" class="headerlink" title="Run server Run server"></a>Run server Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generatesadasdasddsadasdasdasdasdasdasdasdasdasdasdasdasdsa<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
       <categories>

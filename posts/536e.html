@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类, HTML,PHP,软路由，校园网，web安全，渗透">
+    <meta name="keywords" content="hexo 博客本地部署教程, HTML,PHP,软路由，校园网，web安全，渗透">
     <meta name="description" content="专注于web安全，分享生活，分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>分类 | Debugsec</title>
+    <title>hexo 博客本地部署教程 | Debugsec</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -506,7 +506,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title" >分类</h1>
+                    <h1 class="description center-align post-title" >hexo 博客本地部署教程</h1>
                 </div>
             </div>
         </div>
@@ -620,9 +620,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
+                            </a>
+                        
+                            <a href="/tags/matery/">
+                                <span class="chip bg-color">matery</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -630,8 +638,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%88%86%E7%B1%BB/" class="post-category">
-                                分类
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
+                                博客
                             </a>
                         
                     </div>
@@ -643,28 +651,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-09-26
+                    2021-09-29
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-26
+                    2021-09-29
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    8
+                    540
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -692,7 +700,57 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>这是一个网络页面</p>
+                <h3 id="0x01-安装node-js"><a href="#0x01-安装node-js" class="headerlink" title="0x01 安装node.js"></a>0x01 安装node.js</h3><h5 id="Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具"><a href="#Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具" class="headerlink" title="Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具"></a>Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具</h5><p>windows安装:<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
+<p>linux安装</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">sudo apt-get install nodejs
+sudo apt-get install npm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>安装完后，打开命令行</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">node -v
+npm -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="0x02-安装git"><a href="#0x02-安装git" class="headerlink" title="0x02 安装git"></a>0x02 安装git</h3><p>windows安装:<a target="_blank" rel="noopener" href="https://gitforwindows.org/">https://gitforwindows.org/</a></p>
+<p>linux安装</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">sudo apt-get install git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>安装好后，用<code>git --version</code> 来查看一下版本</p>
+<h3 id="0x03-安装hexo"><a href="#0x03-安装hexo" class="headerlink" title="0x03 安装hexo"></a>0x03 安装hexo</h3><p>首先命令行进入需要创建blog的路径，并安装hexo-cli程序</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>安装好后使用<code>hexo -v</code>查看一下版本</p>
+<p>初始化hexo </p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo init myblog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>myblog可自行更改名称</p>
+<p>新建完成后，指定文件夹目录下有：</p>
+<p><code>node_modules:依赖包</code></p>
+<p><code>public:存放生成的页面</code> </p>
+<p><code>scaffolds:生成文章的一些模板</code></p>
+<p><code>sourc:用来存放你的文章</code></p>
+<p><code>themes:主题</code> </p>
+<p><code>_config.yml:博客的配置文件</code></p>
+<p>Hexo常用命令</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new post/draft "postName"  #新建发布/草稿文章
+hexo new page "pageName" # 新建页面
+hexo generate # 生成静态页面至public目录
+hexo server # 启动服务器(默认端口4000，'ctrl+c'关闭server)
+hexo deploy # 远程部署项目
+hexo help # 查看帮助
+hexo version # 查看Hexo的版本
+hexo clean # 清除Hexo的缓存<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>启用后在浏览器输入127.0.0.1:4000即可看到博客</p>
+<p><img src="../images/bk.jpg" alt="hexo"></p>
+<h3 id="0x04-安装hexo-matery主题"><a href="#0x04-安装hexo-matery主题" class="headerlink" title="0x04 安装hexo-matery主题"></a>0x04 安装hexo-matery主题</h3><p>终端进入博客目录，找到themes文件夹，该文件夹是主题包文件夹，下载hexo-theme-matery主题</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">git clone git@github.com:blinkfox/hexo-theme-matery.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>安装好后进入根目录下的全局配置文件_config.yml<code>ctrl+f</code>搜索<code>theme: </code>,修改为hexo-theme-matery</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">theme: hexo-theme-matery<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><code>tips: hexo目录下有两个yml配置文件，一个是全局配置，一个是themes目录下的主题配置</code></p>
+<p>_config.yml 文件的其它修改建议:</p>
+<p><code>请修改 _config.yml 的 url 的值为你的网站主 URL（如：http://xxx.github.io）。</code><br><code>建议修改两个 per_page 的分页条数值为 6 的倍数，如：12、18 等，这样文章列表在各个屏幕下都能较好的显示。</code><br><code>如果是中文用户，则建议修改 language 的值为 zh-CN。</code></p>
+<p>以上是hexo本地化部署的初步设定，下篇介绍matery主题的美化设置</p>
 
                 
             </div>
@@ -719,7 +777,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://www.netsecit.com/posts/765b.html">http://www.netsecit.com/posts/765b.html</a>
+                    <a href="http://www.netsecit.com/posts/536e.html">http://www.netsecit.com/posts/536e.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -756,7 +814,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
+                                </a>
+                            
+                                <a href="/tags/matery/">
+                                    <span class="chip bg-color">matery</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -926,40 +992,54 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/4b61.html">
+                <a href="/posts/536e.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="web安全">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="hexo 博客本地部署教程">
                         
-                        <span class="card-title">web安全</span>
+                        <span class="card-title">hexo 博客本地部署教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            本站博客框架为hexo框架+matery主题
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%90%AD%E5%BB%BA/" class="post-category">
-                                    软路由搭建
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
+                                    博客
                                 </a>
                             
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
+                    <a href="/tags/matery/">
+                        <span class="chip bg-color">matery</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -971,31 +1051,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/undefined.html">
+                <a href="/posts/69d1.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="test">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="软路由">
                         
-                        <span class="card-title">test</span>
+                        <span class="card-title">软路由</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-19
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%B8%9C%E8%BD%AF/" class="post-category">
-                                    东软
+                            <a href="/categories/bugrenew/" class="post-category">
+                                    bugrenew
                                 </a>
                             
                             
@@ -1179,14 +1259,14 @@
             
                 <span id="year">2021</span>
             
-            <span id="year">2021</span>
+            <!-- <span id="year">2021</span> -->
             <a href="/about" target="_blank">Debugsec</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">124</span>
+                        class="white-color">624</span>
             
             
             
